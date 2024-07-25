@@ -11,7 +11,7 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                 <table className="w-full" id="tbl1">
                     <thead>
                         <tr>
-                            <td colSpan="2" >Name of Party</td>
+                            <td colSpan="2">Name of Party</td>
                             <td className="text-center text-3xl w-1/2" style={{ borderBottom: 'none' }} rowSpan="2">{billData?.ownername}</td>
                             <td>CR. NO.</td>
                             <td>{billData?.crno}</td>
@@ -96,8 +96,8 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                             <td colSpan="11" className="font-bold">Amount Credited...{billData?.amountcreditedword}</td>
                         </tr>
                         <tr>
-                            <td colSpan="11" className="">
-                                <table className="w-full border-none border-0" id="tbl3">
+                            <td colSpan="11">
+                                <table className="w-full border-none" id="tbl3">
                                     <thead>
                                         <tr>
                                             <th className="border-2 border-black">Summary</th>
