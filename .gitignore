@@ -34,3 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+src/app/globals.css
+*.mjs
+src/app/page.js
+src/app/page.js
