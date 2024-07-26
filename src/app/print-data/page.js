@@ -148,11 +148,11 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                     </tbody>
                 </table>
                 <div className={`${hidebutton}`}>
-                    <button className="bg-blue-600 text-white px-5 py-2 rounded-lg m-20" onClick={() => {
+                    <button className="bg-blue-600 text-white ml-2 rounded-lg m-20" onClick={() => {
                         setdisplayform('');
                         setdisplaydata('hidden');
                     }}>Back</button>
-                    <button className="bg-blue-600 text-white px-5 py-2 rounded-lg m-20" onClick={() => {
+                    <button className="bg-blue-600 text-white  rounded-lg m-20" onClick={() => {
                         sethidebutton('hidden');
                         setTimeout(() => {
                             window.print();
