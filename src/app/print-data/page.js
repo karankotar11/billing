@@ -158,8 +158,8 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                             window.print();
                             setTimeout(() => {
                                 sethidebutton('');
-                            }, 3000); // Adjust this timeout as needed
-                        }, 1000);
+                            }, 10000); // Adjust this timeout as needed
+                        }, 10);
                     }}>Print</button>
                 </div>
             </div>
