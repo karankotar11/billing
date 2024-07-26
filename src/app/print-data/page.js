@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 export default function PrintData({ displaydata, setdisplaydata, billData, setdisplayform }) {
     const [hidebutton, sethidebutton] = useState('');
+    const [displayname, setdisplayname] = useState('hidden');
 
     return (
         <>
@@ -154,6 +155,7 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                     }}>Back</button>
                     <button className="bg-blue-600 text-white p-2 rounded-lg m-20" onClick={() => {
                         sethidebutton('hidden');
+                        setdisplayname('');
                         setTimeout(() => {
                             window.print();
                             setTimeout(() => {
@@ -161,6 +163,10 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                             }, 10000); // Adjust this timeout as needed
                         }, 10);
                     }}>Print</button>
+                </div>
+                            
+                <div className={`${displayname}`}>
+                     <h6>&copy; by Owner </h6>       
                 </div>
             </div>
         </>
