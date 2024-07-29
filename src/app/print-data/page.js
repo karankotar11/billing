@@ -200,9 +200,9 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                 }}>Print</button>
             </div>
 
-            <div className={`${displayname}`}>
+            {/* <div className={`${displayname}`}>
                 <h6>&copy; by Owner </h6>
-            </div>
+            </div> */}
         </div>
 
     );
