@@ -18,12 +18,12 @@ export default function Home() {
 
 
   return (
-    <>
+    <div className="w-screen">
       <GetFormData displayform={displayform} setbillData={setbillData} setdisplayform={setdisplayform} billData={billData} setdisplaydata={setdisplaydata}/>
 
       <PrintData displaydata={displaydata} setdisplaydata={setdisplaydata} billData={billData} setdisplayform={setdisplayform}/>
       
   
-    </>
+    </div>
   );
 }
