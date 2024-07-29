@@ -9,7 +9,7 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
     return (
 
         <div className={`${displaydata} `}>
-            {/* <table className="w-screen" style={{ overflow: 'scroll' }} id="tbl1">
+            {/* <table className="w-" style={{ overflow: 'scroll' }} id="tbl1">
                 <thead>
                     <tr>
                         <td colSpan="2">Name of Party</td>
@@ -35,7 +35,7 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                 </thead>
             </table> */}
 
-            <table className="w-screen" id="tbl2">
+            <table className="w-full" id="tbl2">
                 <thead>
                     <tr >
                         <td colSpan="3" className='border-x-2 border-black'>Name of Party</td>
