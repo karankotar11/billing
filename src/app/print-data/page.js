@@ -35,7 +35,7 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                 </thead>
             </table> */}
 
-            <table className="w-full" style={{ overflow: 'scroll' }} id="tbl2">
+            <table className="w-full min-w-[550px]" style={{ overflow: 'scroll' }} id="tbl2">
                 <thead>
                     <tr >
                         <td colSpan="3" className='border-x-2 border-black'>Name of Party</td>
@@ -50,9 +50,9 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                         <td className='border-x-2 border-black'>REF NO</td>
                         <td colSpan="3" className='border-x-2 border-black'>{billData?.refno}</td>
                     </tr>
-                    <tr>
+                    <tr >
                         <td colSpan="3" className='border-x-2 border-black'>PAN No.:{billData?.panno}</td>
-                        <td colSpan="4" className="font-semibold border-x-2 border-black border-y-0" style={{ textAlign: 'center', textDecoration: 'underline' }}>Freight Statement</td>
+                        <td colSpan="4" className="font-semibold border-x-2 border-black border-y-0 no-top-border" style={{ textAlign: 'center', textDecoration: 'underline',borderTop:'none' }}>Freight Statement</td>
                         <td style={{ borderBottom: 'none' }} className='border-x-2 border-black'>PERIOD</td>
                         <td style={{ borderBottom: 'none' }} className='border-x-2 border-black'>{billData?.periodfrom}</td>
                         <td className="text-center border-x-2 border-black" style={{ borderBottom: 'none' }}>TO</td>
@@ -132,8 +132,8 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                         <td colSpan="11" className="font-bold">Amount Credited...{billData?.amountcreditedword}</td>
                     </tr>
                     <tr>
-                        <td colSpan="11">
-                            <table className="w-full border-none" id="tbl3">
+                        <td colSpan="11" className='p-0'>
+                            <table className="w-full border-none p-0" id="tbl3">
                                 <thead>
                                     <tr>
                                         <th className="border-2 border-black">Summary</th>
