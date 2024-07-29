@@ -35,7 +35,7 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                 </thead>
             </table> */}
 
-            <table className="w-full min-w-[550px]" style={{ overflow: 'scroll' }} id="tbl2">
+            <table className="w-full min-w-[800px]" style={{ overflow: 'scroll' }} id="tbl2">
                 <thead>
                     <tr >
                         <td colSpan="3" className='border-x-2 border-black'>Name of Party</td>
@@ -61,17 +61,17 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                 </thead>
                 <thead>
                     <tr>
-                        <th>Sr</th>
-                        <th>L/R No.</th>
-                        <th>Date</th>
-                        <th>Destination</th>
-                        <th>Qty</th>
-                        <th>Rate</th>
-                        <th>Amount</th>
-                        <th>HSD(Ltr)</th>
-                        <th>HSD</th>
-                        <th>Advance</th>
-                        <th>Net Amt.</th>
+                        <th className='min-w-[54px]'>Sr</th>
+                        <th className='min-w-[54px]'>L/R No.</th>
+                        <th className='min-w-[54px]'>Date</th>
+                        <th className='min-w-[54px]'>Destination</th>
+                        <th className='min-w-[54px]'>Qty</th>
+                        <th className='min-w-[54px]'>Rate</th>
+                        <th className='min-w-[54px]'>Amount</th>
+                        <th className='min-w-[54px]'>HSD(Ltr)</th>
+                        <th className='min-w-[54px]'>HSD</th>
+                        <th className='min-w-[54px]'>Advance</th>
+                        <th className='min-w-[54px]'>Net Amt.</th>
                     </tr>
                 </thead>
                 <tbody>
