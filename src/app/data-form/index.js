@@ -76,41 +76,41 @@ export default function GetFormData({ displayform, setdisplayform,setbillData, b
                     <td colSpan="11"><input type="text" className="w-42" name="numberplate" id="numberplate" value={billData.numberplate} onChange={handleInputChange} placeholder="GJ00XX0000" /></td>
                 </tr>
                 <tr style={{ textAlign: 'center' }}>
-                    <td><input type="text" className="w-20" name="sr" id="sr" value={billData.sr} onChange={handleInputChange} inputMode="numeric"/></td>
-                    <td><input type="text" className="w-20" name="lrno" id="lrno" value={billData.lrno} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="datesr" id="datesr" value={billData.datesr} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="destination" id="destination" value={billData.destination} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="qty" id="qty" value={billData.qty} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="rate" id="rate" value={billData.rate} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="amount" id="amount" value={billData.amount} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="hsdltr" id="hsdltr" value={billData.hsdltr} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="hsd" id="hsd" value={billData.hsd} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="advance" id="advance" value={billData.advance} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="netamt" id="netamt" value={billData.netamt} onChange={handleInputChange} /></td>
+                    <td><input type="text" className="w-20" name="sr" id="sr" value={billData.sr} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="lrno" id="lrno" value={billData.lrno} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="datesr" id="datesr" value={billData.datesr} onChange={handleInputChange} inputMode="date"/></td>
+                    <td><input type="text" className="w-20" name="destination" id="destination" value={billData.destination} onChange={handleInputChange} inputMode="text"/></td>
+                    <td><input type="text" className="w-20" name="qty" id="qty" value={billData.qty} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="rate" id="rate" value={billData.rate} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="amount" id="amount" value={billData.amount} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="hsdltr" id="hsdltr" value={billData.hsdltr} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="hsd" id="hsd" value={billData.hsd} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="advance" id="advance" value={billData.advance} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="netamt" id="netamt" value={billData.netamt} onChange={handleInputChange} inputMode="decimal"/></td>
                 </tr>
                 <tr style={{ textAlign: 'center' }}>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><input type="text" className="w-20" name="qty2" id="qty2" value={billData.qty2} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="rate2" id="rate2" value={billData.rate2} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="amount2" id="amount2" value={billData.amount2} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="hsdltr2" id="hsdltr2" value={billData.hsdltr2} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="hsd2" id="hsd2" value={billData.hsd2} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="advance2" id="advance2" value={billData.advance2} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="netamt2" id="netamt2" value={billData.netamt2} onChange={handleInputChange} /></td>
+                    <td><input type="text" className="w-20" name="qty2" id="qty2" value={billData.qty2} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="rate2" id="rate2" value={billData.rate2} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="amount2" id="amount2" value={billData.amount2} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="hsdltr2" id="hsdltr2" value={billData.hsdltr2} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="hsd2" id="hsd2" value={billData.hsd2} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="advance2" id="advance2" value={billData.advance2} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="netamt2" id="netamt2" value={billData.netamt2} onChange={handleInputChange} inputMode="decimal"/></td>
                 </tr>
 
                 <tr className="h-80 text-center align-bottom">
                     <td colSpan="4" className="text-left ">Grand Total..</td>
-                    <td><input type="text" className="w-20" name="gqty" id="gqty" value={billData.gqty} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="grate" id="grate" value={billData.grate} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="gamount" id="gamount" value={billData.gamount} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="ghsdltr" id="ghsdltr" value={billData.ghsdltr} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="ghsd" id="ghsd" value={billData.ghsd} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="gadvance" id="gadvance" value={billData.gadvance} onChange={handleInputChange} /></td>
-                    <td><input type="text" className="w-20" name="gnetamt" id="gnetamt" value={billData.gnetamt} onChange={handleInputChange} /></td>
+                    <td><input type="text" className="w-20" name="gqty" id="gqty" value={billData.gqty} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="grate" id="grate" value={billData.grate} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="gamount" id="gamount" value={billData.gamount} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="ghsdltr" id="ghsdltr" value={billData.ghsdltr} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="ghsd" id="ghsd" value={billData.ghsd} onChange={handleInputChange} inputMode="decimal" /></td>
+                    <td><input type="text" className="w-20" name="gadvance" id="gadvance" value={billData.gadvance} onChange={handleInputChange} inputMode="decimal" /></td>
+                    <td><input type="text" className="w-20" name="gnetamt" id="gnetamt" value={billData.gnetamt} onChange={handleInputChange} inputMode="decimal" /></td>
                 </tr>
                 <tr>
                     <td colSpan="11">Amount Credited...<input type="text" className="w-6/12" name="amountcreditedword" id="amountcreditedword" value={billData.amountcreditedword} onChange={handleInputChange} /></td>
