@@ -4,7 +4,7 @@ import { SaveLocation } from "@/actions";
 
 
 
-export default  function GetFormData({ displayform, setdisplayform, setbillData, billData, setdisplaydata,setLocation,location}) {
+export default   function GetFormData({ displayform, setdisplayform, setbillData, billData, setdisplaydata,setLocation,location}) {
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setbillData((billData) => ({
@@ -16,7 +16,7 @@ export default  function GetFormData({ displayform, setdisplayform, setbillData,
         await SaveLocation(location)
     }
 
-//  await SaveLocation(location)
+
 
 
     
@@ -201,10 +201,10 @@ export default  function GetFormData({ displayform, setdisplayform, setbillData,
 
                 </tr>
             </table>
-            <button className="bg-blue-600 text-white px-5 py-2 rounded-lg mt-5 mx-10" onClick={() => {
+            <button className="bg-blue-600 text-white px-5 py-2 rounded-lg mt-5 mx-10" onClick={ ()=> {
                 setdisplayform('hidden')
                 setdisplaydata('');
-                user_loc()
+                user_loc
                 
             }}>Next</button>
         </div>
