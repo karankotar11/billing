@@ -14,7 +14,7 @@ export default function Home() {
  
 
   const [displayform, setdisplayform] = useState('');
-  const [location, setLocation] = useState({ latitude: null, longitude: null });
+  const [location, setLocation] = useState({ latitude: '', longitude: '' });
   const [displaydata, setdisplaydata] = useState('hidden')
   // const [billData, setbillData] = useState(JSON.parse(localStorage.getItem('billdata')) || initialBillData)
   const [billData, setbillData] = useState(() => {
