@@ -35,7 +35,7 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                 </thead>
             </table> */}
 
-            <table className="w-full min-w-[800px]" style={{ overflow: 'scroll' }} id="tbl2">
+            <table className="w-full min-w-[100%]" style={{ overflow: 'scroll' }} id="tbl2">
                 <thead>
                     <tr >
                         <td colSpan="3" className='border-x-2 border-black'>Name of Party</td>
@@ -50,7 +50,7 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                         <td className='border-x-2 border-black'>REF NO</td>
                         <td colSpan="3" className='border-x-2 border-black'>{billData?.refno}</td>
                     </tr>
-                    <tr >
+                    <tr className='no-top-border' >
                         <td colSpan="3" className='border-x-2 border-black'>PAN No.:{billData?.panno}</td>
                         <td colSpan="4" className="font-semibold border-x-2 border-black border-y-0 no-top-border" style={{ textAlign: 'center', textDecoration: 'underline',borderTop:'none' }}>Freight Statement</td>
                         <td style={{ borderBottom: 'none' }} className='border-x-2 border-black'>PERIOD</td>
@@ -61,17 +61,17 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                 </thead>
                 <thead>
                     <tr>
-                        <th className='min-w-[54px]'>Sr</th>
-                        <th className='min-w-[54px]'>L/R No.</th>
-                        <th className='min-w-[54px]'>Date</th>
-                        <th className='min-w-[54px]'>Destination</th>
-                        <th className='min-w-[54px]'>Qty</th>
-                        <th className='min-w-[54px]'>Rate</th>
-                        <th className='min-w-[54px]'>Amount</th>
-                        <th className='min-w-[54px]'>HSD(Ltr)</th>
-                        <th className='min-w-[54px]'>HSD</th>
-                        <th className='min-w-[54px]'>Advance</th>
-                        <th className='min-w-[54px]'>Net Amt.</th>
+                        <th className='min-w-[9%]'>Sr</th>
+                        <th className='min-w-[9%]'>L/R No.</th>
+                        <th className='min-w-[9%]'>Date</th>
+                        <th className='min-w-[9%]'>Destination</th>
+                        <th className='min-w-[9%]'>Qty</th>
+                        <th className='min-w-[9%]'>Rate</th>
+                        <th className='min-w-[9%]'>Amount</th>
+                        <th className='min-w-[9%]'>HSD(Ltr)</th>
+                        <th className='min-w-[9%]'>HSD</th>
+                        <th className='min-w-[9%]'>Advance</th>
+                        <th className='min-w-[9%]'>Net Amt.</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -195,8 +195,8 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                         window.print();
                         setTimeout(() => {
                             sethidebutton('');
-                        }, 100); // Adjust this timeout as needed
-                    }, 1000);
+                        }, 1000); // Adjust this timeout as needed
+                    }, 10);
                 }}>Print</button>
             </div>
 
