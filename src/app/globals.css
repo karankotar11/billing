@@ -48,3 +48,7 @@ body{
 table{
   border-color: black;
 }
+
+table tr,th{
+  padding-left:2px;
+}
