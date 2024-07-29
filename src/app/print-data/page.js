@@ -119,6 +119,32 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                             <td>{billData?.netamt2}</td>
                         </tr>
                     }
+                    {
+                        (   billData?.sr3||
+                            billData?.lrno3||
+                            billData?.datesr3||
+                            billData?.destination3||
+                            billData?.qty3 ||
+                            billData?.rate3 ||
+                            billData?.amount3 ||
+                            billData?.hsdltr3 ||
+                            billData?.hsd3 ||
+                            billData?.advanc3 ||
+                            billData?.netamt3) &&
+                        <tr style={{ textAlign: 'center' }}>
+                            <td>{billData?.sr3}</td>
+                            <td>{billData?.lrno3}</td>
+                            <td>{billData?.datesr3}</td>
+                            <td>{billData?.destination3}</td>
+                            <td>{billData?.qty3}</td>
+                            <td>{billData?.rate3}</td>
+                            <td>{billData?.amount3}</td>
+                            <td>{billData?.hsdltr3}</td>
+                            <td>{billData?.hsd3}</td>
+                            <td>{billData?.advance3}</td>
+                            <td>{billData?.netamt3}</td>
+                        </tr>
+                    }
 
 
                     <tr className="h-80 text-center align-bottom">
