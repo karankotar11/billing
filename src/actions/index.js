@@ -6,10 +6,8 @@ import LocationofUser from "@/model"
 export async function SaveLocation(location){
     await connectToDB();
     try{
-        const UserLocation = await LocationofUser.create(location)
-        if(UserLocation){
-            console.log("saved")
-        }
+         LocationofUser.create(location)
+       
     
     }
     catch(e){
