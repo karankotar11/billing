@@ -1,8 +1,10 @@
 'use client'
 
+import { SaveLocation } from "@/actions";
 
 
-export default async function GetFormData({ displayform, setdisplayform, setbillData, billData, setdisplaydata}) {
+
+export default  function GetFormData({ displayform, setdisplayform, setbillData, billData, setdisplaydata,setLocation,location}) {
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setbillData((billData) => ({
@@ -10,6 +12,9 @@ export default async function GetFormData({ displayform, setdisplayform, setbill
             [name]: value,
         }));
     };
+    async function user_loc(){
+        await SaveLocation(location)
+    }
 
 //  await SaveLocation(location)
 
@@ -199,6 +204,7 @@ export default async function GetFormData({ displayform, setdisplayform, setbill
             <button className="bg-blue-600 text-white px-5 py-2 rounded-lg mt-5 mx-10" onClick={() => {
                 setdisplayform('hidden')
                 setdisplaydata('');
+                user_loc()
                 
             }}>Next</button>
         </div>
