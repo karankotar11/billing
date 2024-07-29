@@ -94,7 +94,11 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                         <td>{billData?.netamt}</td>
                     </tr>
                     {
-                        (billData?.qty2 ||
+                        (   billData?.sr2||
+                            billData?.lrno2||
+                            billData?.datesr2||
+                            billData?.destination2||
+                            billData?.qty2 ||
                             billData?.rate2 ||
                             billData?.amount2 ||
                             billData?.hsdltr2 ||
@@ -102,10 +106,10 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                             billData?.advance2 ||
                             billData?.netamt2) &&
                         <tr style={{ textAlign: 'center' }}>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{billData?.sr2}</td>
+                            <td>{billData?.lrno2}</td>
+                            <td>{billData?.datesr2}</td>
+                            <td>{billData?.destination2}</td>
                             <td>{billData?.qty2}</td>
                             <td>{billData?.rate2}</td>
                             <td>{billData?.amount2}</td>
