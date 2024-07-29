@@ -30,6 +30,10 @@
 #tbl3 tr{
   border:0 ;
 }
+#tbl3{
+  border-top:none;
+  border-bottom: none;
+}
 #tbl1 td{
   border:2px solid black;
 }
@@ -40,4 +44,7 @@ input{
 }
 body{
   width:100%;
+}
+table{
+  border-color: black;
 }
