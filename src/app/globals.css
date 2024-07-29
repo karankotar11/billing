@@ -53,3 +53,7 @@ table td{
   padding-left:5px;
   padding-right:5px;
 }
+.no-top-border {
+  border-top: none !important; /* Use !important if necessary */
+  border-bottom: none !important; /* Use !important if necessary */
+}
