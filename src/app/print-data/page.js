@@ -7,9 +7,9 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
     const [displayname, setdisplayname] = useState('hidden');
 
     return (
-        <>
-            <div className={`${displaydata}`}>
-                <table className="w-full" id="tbl1">
+       
+            <div  className={`${displaydata}`}>
+                <table className="w-screen" style={{overflow:'scroll'}} id="tbl1">
                     <thead>
                         <tr>
                             <td colSpan="2">Name of Party</td>
@@ -35,7 +35,7 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                     </thead>
                 </table>
 
-                <table className="w-full" id="tbl2">
+                <table className="w-screen" id="tbl2">
                     <thead>
                         <tr>
                             <th>Sr</th>
@@ -70,6 +70,14 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                             <td>{billData?.advance}</td>
                             <td>{billData?.netamt}</td>
                         </tr>
+                        {
+                            (billData?.qty2||
+                            billData?.rate2||
+                            billData?.amount2||
+                            billData?.hsdltr2||
+                            billData?.hsd2||
+                            billData?.advance2||
+                            billData?.netamt2)&&
                         <tr style={{ textAlign: 'center' }}>
                             <td></td>
                             <td></td>
@@ -83,6 +91,9 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                             <td>{billData?.advance2}</td>
                             <td>{billData?.netamt2}</td>
                         </tr>
+                        }
+                        
+                            
                         <tr className="h-80 text-center align-bottom">
                             <td colSpan="4" className="text-left font-bold">Grand Total..</td>
                             <td>{billData?.gqty}</td>
@@ -93,6 +104,7 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                             <td>{billData?.gadvance}</td>
                             <td>{billData?.gnetamt}</td>
                         </tr>
+                        
                         <tr>
                             <td colSpan="11" className="font-bold">Amount Credited...{billData?.amountcreditedword}</td>
                         </tr>
@@ -149,11 +161,11 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                     </tbody>
                 </table>
                 <div className={`${hidebutton}`}>
-                    <button className="bg-blue-600 text-white ml-2 p-2 rounded-lg m-20" onClick={() => {
+                    <button className="bg-blue-600 text-white ml-2 p-2 rounded-lg mt-10 mx-2" onClick={() => {
                         setdisplayform('');
                         setdisplaydata('hidden');
                     }}>Back</button>
-                    <button className="bg-blue-600 text-white p-2 rounded-lg m-20" onClick={() => {
+                    <button className="bg-blue-600 text-white p-2 rounded-lg mt-10 mx-3" onClick={() => {
                         sethidebutton('hidden');
                         setdisplayname('');
                         setTimeout(() => {
@@ -161,7 +173,7 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                             setTimeout(() => {
                                 sethidebutton('');
                             }, 100); // Adjust this timeout as needed
-                        }, 10);
+                        }, 1000);
                     }}>Print</button>
                 </div>
                             
@@ -169,6 +181,6 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                      <h6>&copy; by Owner </h6>       
                 </div>
             </div>
-        </>
+     
     );
 }
