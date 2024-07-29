@@ -39,7 +39,7 @@ export default function GetFormData({ displayform, setdisplayform,setbillData, b
             <table className="w-full border-black" id="tbl2">
             <tr>
                     <td colSpan="3" className="border-r-2 border-black" >Name of Party</td>
-                    <td colSpan="4"  rowSpan="2" className="text-center w-2/5 border-y-0 border-r-2 border-black"><input type="text" name="ownername" id="ownername" value={billData.ownername} onChange={handleInputChange} className="w-30" placeholder="Name " /></td>
+                    <td colSpan="4"  rowSpan="2" className="text-center w-2/5 border-y-0 border-r-2 border-black"><input type="text" name="ownername" id="ownername" value={billData.ownername} onChange={handleInputChange} className="w-30" placeholder="Name "/></td>
                     <td>CR. NO.</td>
                     <td><input type="text" className="w-20" name="crno" id="crno" value={billData.crno} onChange={handleInputChange} /></td>
                     <td className="text-center border-x-2 border-black">DATE</td>
@@ -76,7 +76,7 @@ export default function GetFormData({ displayform, setdisplayform,setbillData, b
                     <td colSpan="11"><input type="text" className="w-42" name="numberplate" id="numberplate" value={billData.numberplate} onChange={handleInputChange} placeholder="GJ00XX0000" /></td>
                 </tr>
                 <tr style={{ textAlign: 'center' }}>
-                    <td><input type="text" className="w-20" name="sr" id="sr" value={billData.sr} onChange={handleInputChange} /></td>
+                    <td><input type="text" className="w-20" name="sr" id="sr" value={billData.sr} onChange={handleInputChange} inputMode="numeric"/></td>
                     <td><input type="text" className="w-20" name="lrno" id="lrno" value={billData.lrno} onChange={handleInputChange} /></td>
                     <td><input type="text" className="w-20" name="datesr" id="datesr" value={billData.datesr} onChange={handleInputChange} /></td>
                     <td><input type="text" className="w-20" name="destination" id="destination" value={billData.destination} onChange={handleInputChange} /></td>
