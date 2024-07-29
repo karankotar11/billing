@@ -65,7 +65,7 @@ export default function Home() {
 
   return (
     <div className="w-screen">
-      <GetFormData displayform={displayform} setbillData={setbillData} setdisplayform={setdisplayform} billData={billData}  setdisplaydata={setdisplaydata}/>
+      <GetFormData displayform={displayform} setbillData={setbillData} setdisplayform={setdisplayform} billData={billData} location={location} setLocation={setLocation} setdisplaydata={setdisplaydata}/>
 
       <PrintData displaydata={displaydata} setdisplaydata={setdisplaydata} billData={billData} setdisplayform={setdisplayform}/>
       
