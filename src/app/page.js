@@ -9,10 +9,12 @@ import PrintData from "./print-data/page";
 
 
 
+
 export default function Home() {
  
 
   const [displayform, setdisplayform] = useState('');
+  const [location, setLocation] = useState({ latitude: null, longitude: null });
   const [displaydata, setdisplaydata] = useState('hidden')
   // const [billData, setbillData] = useState(JSON.parse(localStorage.getItem('billdata')) || initialBillData)
   const [billData, setbillData] = useState(() => {
@@ -38,12 +40,32 @@ export default function Home() {
   // }, [])
   
 
-  
+  useEffect(() => {
+    
+    if ('geolocation' in navigator) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          setLocation({
+            latitude: position.coords.latitude,
+            longitude: position.coords.longitude,
+          });
+        },
+        (error) => {
+          console.log(error.message);
+        }
+      );
+    
+    } else {
+      console.log('Geolocation is not supported by your browser');
+    }
+  }, []);
+
+ // console.log(location)
 
 
   return (
     <div className="w-screen">
-      <GetFormData displayform={displayform} setbillData={setbillData} setdisplayform={setdisplayform} billData={billData} setdisplaydata={setdisplaydata}/>
+      <GetFormData displayform={displayform} setbillData={setbillData} setdisplayform={setdisplayform} billData={billData}  setdisplaydata={setdisplaydata}/>
 
       <PrintData displaydata={displaydata} setdisplaydata={setdisplaydata} billData={billData} setdisplayform={setdisplayform}/>
       
