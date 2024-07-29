@@ -61,17 +61,17 @@ export default function PrintData({ displaydata, setdisplaydata, billData, setdi
                 </thead>
                 <thead>
                     <tr>
-                        <th className='min-w-[9%]'>Sr</th>
-                        <th className='min-w-[9%]'>L/R No.</th>
-                        <th className='min-w-[9%]'>Date</th>
-                        <th className='min-w-[9%]'>Destination</th>
-                        <th className='min-w-[9%]'>Qty</th>
-                        <th className='min-w-[9%]'>Rate</th>
-                        <th className='min-w-[9%]'>Amount</th>
-                        <th className='min-w-[9%]'>HSD(Ltr)</th>
-                        <th className='min-w-[9%]'>HSD</th>
-                        <th className='min-w-[9%]'>Advance</th>
-                        <th className='min-w-[9%]'>Net Amt.</th>
+                        <th className='min-w-24'>Sr</th>
+                        <th className='min-w-24'>L/R No.</th>
+                        <th className='min-w-24'>Date</th>
+                        <th className='min-w-24'>Destination</th>
+                        <th className='min-w-24'>Qty</th>
+                        <th className='min-w-24'>Rate</th>
+                        <th className='min-w-24'>Amount</th>
+                        <th className='min-w-24'>HSD(Ltr)</th>
+                        <th className='min-w-24'>HSD</th>
+                        <th className='min-w-24'>Advance</th>
+                        <th className='min-w-24'>Net Amt.</th>
                     </tr>
                 </thead>
                 <tbody>
