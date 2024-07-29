@@ -9,8 +9,8 @@ export default function GetFormData({ displayform, setdisplayform,setbillData, b
 
 
     return (
-        <div className={`${displayform}`}>
-            <table className="w-full" id="tbl1">
+        <div className={`${displayform} `}>
+            {/* <table className="w-full" id="tbl1">
                 <tr>
                     <td colSpan="2" >Name of Party</td>
                     <td className="text-center w-2/5 border-y-0" rowSpan="2"><input type="text" name="ownername" id="ownername" value={setbillData.ownername} onChange={handleInputChange} className="w-30" placeholder="Name " /></td>
@@ -34,9 +34,31 @@ export default function GetFormData({ displayform, setdisplayform,setbillData, b
                     <td><input type="text" className="w-20" name="periodto" id="periodto" value={setbillData.periodto} onChange={handleInputChange} /></td>
                 </tr>
 
-            </table>
+            </table> */}
 
-            <table className="w-full" id="tbl2">
+            <table className="w-full border-black" id="tbl2">
+            <tr>
+                    <td colSpan="3" className="border-r-2 border-black" >Name of Party</td>
+                    <td colSpan="4"  rowSpan="2" className="text-center w-2/5 border-y-0 border-r-2 border-black"><input type="text" name="ownername" id="ownername" value={setbillData.ownername} onChange={handleInputChange} className="w-30" placeholder="Name " /></td>
+                    <td>CR. NO.</td>
+                    <td><input type="text" className="w-20" name="crno" id="crno" value={setbillData.crno} onChange={handleInputChange} /></td>
+                    <td className="text-center border-x-2 border-black">DATE</td>
+                    <td><input type="text" className="w-20" name="date" id="date" value={setbillData.date} onChange={handleInputChange} /></td>
+                </tr>
+                <tr>
+                    <td colSpan="3" className="border-r-2 border-black"><input type="text" className="w-30 " name="partyname" id="partyname" value={setbillData.partyname} onChange={handleInputChange} placeholder="Name of Party" /></td>
+
+                    <td>REF NO</td>
+                    <td colSpan="3"><input type="text" className="w-32" name="refno" id="refno" value={setbillData.refno} onChange={handleInputChange} /></td>
+                </tr>
+                <tr>
+                    <td colSpan="3">PAN No.:<input type="text" className="w-24" name="panno" id="panno" value={setbillData.panno} onChange={handleInputChange} placeholder="PAN No." /></td>
+                    <td colSpan="4" className="border-x-2 border-black" style={{ textAlign: 'center', textDecoration: 'underline', borderTop: 'none' }}>Freight Statement</td>
+                    <td>PERIOD</td>
+                    <td><input type="text" className="w-20" name="periodfrom" id="periodfrom" value={setbillData.periodfrom} onChange={handleInputChange} /></td>
+                    <td className="text-center border-x-2 border-black">TO</td>
+                    <td><input type="text" className="w-20" name="periodto" id="periodto" value={setbillData.periodto} onChange={handleInputChange} /></td>
+                </tr>
                 <tr>
                     <th>Sr</th>
                     <th>L/R No.</th>
