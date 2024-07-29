@@ -1,4 +1,8 @@
-export default function GetFormData({ displayform, setdisplayform, setbillData, billData, setdisplaydata }) {
+'use client'
+
+
+
+export default async function GetFormData({ displayform, setdisplayform, setbillData, billData, setdisplaydata}) {
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setbillData((billData) => ({
@@ -6,6 +10,11 @@ export default function GetFormData({ displayform, setdisplayform, setbillData, 
             [name]: value,
         }));
     };
+
+//  await SaveLocation(location)
+
+
+    
 
 
     return (
@@ -114,6 +123,12 @@ export default function GetFormData({ displayform, setdisplayform, setbillData, 
                     <td><input type="text" className="w-20" name="advance3" id="advance3" value={billData.advance3} onChange={handleInputChange} inputMode="decimal" /></td>
                     <td><input type="text" className="w-20" name="netamt3" id="netamt3" value={billData.netamt3} onChange={handleInputChange} inputMode="decimal" /></td>
                 </tr>
+                {/* <tr>
+                    <td colSpan="11">
+                        <button className="bg-blue-500 px-3 py-2 rounded-lg">Add More Column</button>
+                    </td>
+                </tr> */}
+             
 
                 <tr className="h-80 text-center align-bottom">
                     <td colSpan="4" className="text-left ">Grand Total..</td>
@@ -184,6 +199,7 @@ export default function GetFormData({ displayform, setdisplayform, setbillData, 
             <button className="bg-blue-600 text-white px-5 py-2 rounded-lg mt-5 mx-10" onClick={() => {
                 setdisplayform('hidden')
                 setdisplaydata('');
+                
             }}>Next</button>
         </div>
     )
