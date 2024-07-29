@@ -89,10 +89,10 @@ export default function GetFormData({ displayform, setdisplayform,setbillData, b
                     <td><input type="text" className="w-20" name="netamt" id="netamt" value={billData.netamt} onChange={handleInputChange} inputMode="decimal"/></td>
                 </tr>
                 <tr style={{ textAlign: 'center' }}>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                <td><input type="text" className="w-20" name="sr2" id="sr2" value={billData.sr2} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="lrno2" id="lrno2" value={billData.lrno2} onChange={handleInputChange} inputMode="decimal"/></td>
+                    <td><input type="text" className="w-20" name="datesr2" id="datesr2" value={billData.datesr2} onChange={handleInputChange} inputMode="date"/></td>
+                    <td><input type="text" className="w-20" name="destination2" id="destination2" value={billData.destination2} onChange={handleInputChange} inputMode="text"/></td>
                     <td><input type="text" className="w-20" name="qty2" id="qty2" value={billData.qty2} onChange={handleInputChange} inputMode="decimal"/></td>
                     <td><input type="text" className="w-20" name="rate2" id="rate2" value={billData.rate2} onChange={handleInputChange} inputMode="decimal"/></td>
                     <td><input type="text" className="w-20" name="amount2" id="amount2" value={billData.amount2} onChange={handleInputChange} inputMode="decimal"/></td>
