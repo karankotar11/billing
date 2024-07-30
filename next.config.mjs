@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output:"export",
-    // experimental: {
-    //     serverActions: true, // Enable server actions if you're using them
-    //   },
+    reactStrictMode: true, // Enables React's Strict Mode for your app
+    output: 'standalone', // Use standalone output for server deployment
+    experimental: {
+      serverActions: true, // Enables experimental server actions feature (if applicable)
+    },
 };
 
 export default nextConfig;
