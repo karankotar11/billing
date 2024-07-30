@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 'use client'
+=======
+'use client';
+>>>>>>> 2448df7fe18447cd760cbc46f3798dfd7a7ae731
 
 import { useEffect, useState } from "react"
 import { initialBillData } from "./utils";
